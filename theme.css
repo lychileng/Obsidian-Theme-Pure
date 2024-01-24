@@ -3,7 +3,7 @@
 📋 0.1.0
 📅 2024-01-24
 🐦 @lychileng
-🚩 Adjust the sidebar UI display and develop it into a skin if possible. 
+🚩 This is a minimalist-style theme. 
 */
 
 /* Adjust the display and alignment of the left side-dock-ribbon area. */
@@ -11,7 +11,7 @@
 .mod-macos .workspace-ribbon.side-dock-ribbon.mod-left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Ensure the content is close to the bottom. */
+    justify-content: flex-end;
     width: 44px;
     height: 100%;
 }
@@ -29,11 +29,11 @@
 /* Adjust the bottom margin of actions. */
 .side-dock-actions {
     margin-bottom: 5px;
-    position: relative; /* Preparing for positioning pseudo-elements */
+    position: relative;
 }
 /* Add a pseudo-element for drawing a border line. */
 .side-dock-actions::after {
-    content: ''; /* Pseudo-elements must have content in order to be displayed. */
+    content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -44,7 +44,7 @@
 /* Adapt to macOS system windows. */
 .mod-macos .side-dock-settings {
     margin-top: 10px;
-    padding-bottom: 40px; /* Due to the foolish UI/UX rendering design of Obsidian, adjust it manually. */
+    padding-bottom: 40px;
 }
 /* Adapt to Linux/Windows system windows. */
 .mod-linux .side-dock-settings,
