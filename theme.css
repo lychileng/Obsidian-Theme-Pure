@@ -1,0 +1,93 @@
+/*
+🖌️ Hide-Ribbon
+📋 0.1.0
+📅 2024-01-24
+🐦 @lychileng
+🚩 Adjust the sidebar UI display and develop it into a skin if possible. 
+*/
+
+/* Adjust the display and alignment of the left side-dock-ribbon area. */
+/* Adapt to macOS system windows. */
+.mod-macos .workspace-ribbon.side-dock-ribbon.mod-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensure the content is close to the bottom. */
+    width: 44px;
+    height: 100%;
+}
+/* Adapt to Linux/Windows system windows. */
+.mod-linux .workspace-ribbon.side-dock-ribbon.mod-left,
+.mod-windows .workspace-ribbon.side-dock-ribbon.mod-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0px;
+    padding-top: 48;
+    width: 44px;
+    height: 100%;
+}
+/* Adjust the bottom margin of actions. */
+.side-dock-actions {
+    margin-bottom: 5px;
+    position: relative; /* Preparing for positioning pseudo-elements */
+}
+/* Add a pseudo-element for drawing a border line. */
+.side-dock-actions::after {
+    content: ''; /* Pseudo-elements must have content in order to be displayed. */
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #64646464;
+    width: 100%;
+}
+/* Adapt to macOS system windows. */
+.mod-macos .side-dock-settings {
+    margin-top: 10px;
+    padding-bottom: 40px; /* Due to the foolish UI/UX rendering design of Obsidian, adjust it manually. */
+}
+/* Adapt to Linux/Windows system windows. */
+.mod-linux .side-dock-settings,
+.mod-windows .side-dock-settings {
+    margin-top: 10px;
+}
+
+/* Adjust the display animation effect. */
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed,
+.workspace-ribbon.mod-left {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s ease-out .3s;
+}
+
+/* Adjust the hide animation effect. */
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed:hover,
+.workspace-ribbon.mod-left:hover {
+    opacity: 1;
+    left: 0;
+    transition: all .3s ease-out .3s;
+}
+
+/* Adapt to macOS system windows. */
+/* Remove the space reserved for the toggle button at the top of the side-dock-ribbon. */
+.mod-macos .workspace-ribbon.side-dock-ribbon.mod-left::before {
+    display: none;
+}
+/* The window buttons on a Mac are in the top left corner. */
+.mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+    padding-left: 75px;
+}
+
+/* Adjust the position of the sidebar-toggle-button. */
+.sidebar-toggle-button {
+    -webkit-app-region: inherit;
+    height: calc(var(--header-height) - 1px);
+    display: flex;
+    justify-content: center;
+    padding: var(--size-4-2) 0 7px 0;
+    --icon-size: var(--icon-l);
+    --icon-stroke: var(--icon-l-stroke-width);
+}
