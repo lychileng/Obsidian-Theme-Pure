@@ -16,7 +16,7 @@ Just started using Obsidian, in the process of exploring. I hope to make the win
 
 ## screenshots
 
-![macOS](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/mac.jpg?raw=true)  
+![macOS](https://github.com/lychileng/Obsidian-Theme-Pure/blob/91f1f193a69d790b99fff7933745c6d6930c2e6f/screenshots/mac.jpg?raw=true)  
 ![Windows](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/win.jpg?raw=true)
 
 
