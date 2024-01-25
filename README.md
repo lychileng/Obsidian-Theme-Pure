@@ -16,6 +16,8 @@ Just started using Obsidian, in the process of exploring. I hope to make the win
 
 ## screenshots
 
+![Pure|512](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/Pure%20Theme.gif?raw=true)  
+
 ![macOS](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/mac_512.jpg?raw=true)  
 ![Windows](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/win_512.jpg?raw=true)
 
