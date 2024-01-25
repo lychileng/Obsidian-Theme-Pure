@@ -8,7 +8,7 @@ Just started using Obsidian, in the process of exploring. I hope to make the win
 
 ## features
 
-![Pure|512](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/Pure%20Theme.gif?raw=true)
+![Pure](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/Pure%20Theme.gif?raw=true)
 + The Ribbon area will automatically hide and display when the mouse moves to the left edge of the window.
 + The Actions button in the Ribbon is displayed aligned to the bottom.
 + The effect is even better when the "**Window frame style**" is set to "**Hidden (default)**".
