@@ -12,6 +12,7 @@ Just started using Obsidian, in the process of exploring. I hope to make the win
 + The Ribbon area will automatically hide and display when the mouse moves to the left edge of the window.
 + The Actions button in the Ribbon is displayed aligned to the bottom.
 + The effect is even better when the "**Window frame style**" is set to "**Hidden (default)**".
++ Change the Task's Checkbox to a circular shape for a more comfortable visual experience.
 + Compatible with both macOS and Windows.
 
 
