@@ -1,12 +1,15 @@
 /*
-🖌️ Hide-Ribbon
-📋 0.1.0
-📅 2024-01-24
+🖌️ Pure
+📋 0.1.1
+📅 2024-01-28
 🐦 @lychileng
 🚩 This is a minimalist-style theme. 
 */
 
-/* Adjust the display and alignment of the left side-dock-ribbon area. */
+/* -- Hide Ribbon ---------------------------------------------------------- */
+/* -- Adjust the display and alignment of the left side-dock-ribbon area. -- */
+/* ------------------------------------------------------------------------- */
+
 /* Adapt to macOS system windows. */
 .mod-macos .workspace-ribbon.side-dock-ribbon.mod-left {
     display: flex;
@@ -15,6 +18,7 @@
     width: 44px;
     height: 100%;
 }
+
 /* Adapt to Linux/Windows system windows. */
 .mod-linux .workspace-ribbon.side-dock-ribbon.mod-left,
 .mod-windows .workspace-ribbon.side-dock-ribbon.mod-left {
@@ -26,11 +30,13 @@
     width: 44px;
     height: 100%;
 }
+
 /* Adjust the bottom margin of actions. */
 .side-dock-actions {
     margin-bottom: 5px;
     position: relative;
 }
+
 /* Add a pseudo-element for drawing a border line. */
 .side-dock-actions::after {
     content: '';
@@ -41,11 +47,13 @@
     border-bottom: 1px solid #64646464;
     width: 100%;
 }
+
 /* Adapt to macOS system windows. */
 .mod-macos .side-dock-settings {
     margin-top: 10px;
     padding-bottom: 40px;
 }
+
 /* Adapt to Linux/Windows system windows. */
 .mod-linux .side-dock-settings,
 .mod-windows .side-dock-settings {
@@ -76,6 +84,7 @@
 .mod-macos .workspace-ribbon.side-dock-ribbon.mod-left::before {
     display: none;
 }
+
 /* The window buttons on a Mac are in the top left corner. */
 .mod-macos.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
     padding-left: 75px;
@@ -90,4 +99,47 @@
     padding: var(--size-4-2) 0 7px 0;
     --icon-size: var(--icon-l);
     --icon-stroke: var(--icon-l-stroke-width);
+}
+
+
+/* -- Change The Style of To-do List ------------------------------------------------------------------------------ */
+/* -- Change the checkbox of the todo to a circular shape, and distinguish the colors according to the priority. -- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Styles applicable for both editing and preview modes */
+/* Basic style, defining the appearance of the checkbox */
+.cm-s-obsidian .task-list-item-checkbox, 
+/* .markdown-preview-view .task-list-item-checkbox, */
+.markdown-reading-view .task-list-item-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Inter';
+    color: var(--text-muted);
+    border: 2px solid var(--text-muted);
+    border-radius: 100%;
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Style when the checkbox is checked */
+.cm-s-obsidian .task-list-item-checkbox:checked,
+/* .markdown-preview-view .task-list-item-checkbox, */
+.markdown-reading-view .task-list-item-checkbox:checked {
+    background-color: var(--text-muted);
+    color: var(--background-primary);
+}
+
+/* Add a tick mark when the checkbox is checked */
+.cm-s-obsidian .task-list-item-checkbox:checked:after,
+/* .markdown-preview-view .task-list-item-checkbox, */
+.markdown-reading-view .task-list-item-checkbox:checked:after {
+    content: '\2713'; /* Tick mark character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center */
+    font-size: 0.8em;
 }
