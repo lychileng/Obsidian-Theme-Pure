@@ -138,7 +138,7 @@
 /* .markdown-preview-view .task-list-item-checkbox, */
 .markdown-reading-view .task-list-item-checkbox:checked:after {
     content: '\2713'; /* Tick mark character */
-    font-family: 'Inter';
+    /* font-family: 'Inter'; */
     position: absolute;
     top: 50%;
     left: 50%;
