@@ -15,7 +15,7 @@ Compatible with both macOS and Windows:
 + The Actions button in the Ribbon is displayed aligned to the bottom.
 + The effect is even better when the "**Window frame style**" is set to "**Hidden (default)**".
 + Change the Task's Checkbox to a circular shape for a more comfortable visual experience.
-+ Change the style of the unordered list. Modify the first four levels to solid/hollow circles and squares.
++ Change the style of bullet list. Modify the first four levels to solid/hollow circles and squares.
 
 
 ## screenshots
