@@ -144,14 +144,15 @@
 }
 */
 
+/* Change OB's default values */
 input[type=checkbox]:checked:after {
     content: "\2713"; /* Tick mark character */
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center */
-    width: 14px;
-    height: 14px;
+    transform: translate(-50%, -48%); /* Center */
+    width: 90%;
+    height: 90%;
     -webkit-mask-position: 50% 50%;
     -webkit-mask-size: 75%;
 }
