@@ -1,7 +1,7 @@
 /*
 🖌️ Pure
-📋 0.1.1
-📅 2024-01-28
+📋 0.1.2
+📅 2024-01-30
 🐦 @lychileng
 🚩 This is a minimalist-style theme. 
 */
@@ -143,4 +143,68 @@
     left: 50%;
     transform: translate(-50%, -50%); /* Center */
     font-size: 0.75em;
+}
+
+/* -- Change The Marker Style of The Unordered List. -------------------------- */
+/* -- Mainly modify the first four common levels, keep the others unchanged. -- */
+/* ---------------------------------------------------------------------------- */
+
+/* Change list line 1 to a solid circle. */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
+.markdown-reading-view .has-list-bullet .list-bullet:after {
+    height: 5px;
+    width: 5px;
+    background-color: var(--list-marker-color);
+    border-color: var(--list-marker-color);
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+/* Change list line 2 to a hollow circle. */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after,
+.markdown-reading-view .has-list-bullet .has-list-bullet .list-bullet:after {
+    height: 5px;
+    width: 5px;
+    background-color: Transparent;
+    border-color: var(--list-marker-color);
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+/* Change list line 3 to a solid square. */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
+.markdown-reading-view .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet:after {
+    height: 4px;
+    width: 4px;
+    background-color: var(--list-marker-color);
+    border-color: var(--list-marker-color);
+    border-style: solid;
+    border-radius: 0%;
+    border-width: 1px;
+}
+
+/* Change list line 4 to a hollow square. */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after,
+.markdown-reading-view .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet:after {
+    height: 4px;
+    width: 4px;
+    background-color: Transparent;
+    border-color: var(--list-marker-color);
+    border-style: solid;
+    border-radius: 0%;
+    border-width: 1px;
+}
+
+/* Keep others normal. */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-5 .list-bullet:after,
+.markdown-reading-view .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet:after {
+    height: 2px;
+    width: 2px;
+    background-color: var(--list-marker-color);
+    border-color: var(--list-marker-color);
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
 }
