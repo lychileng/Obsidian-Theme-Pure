@@ -8,12 +8,14 @@ Just started using Obsidian, in the process of exploring. I hope to make the win
 
 ## features
 
-![Pure](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/Pure%20Theme.gif?raw=true)
+![Pure](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/Pure%20Theme.gif?raw=true)  
+
+Compatible with both macOS and Windows:
 + The Ribbon area will automatically hide and display when the mouse moves to the left edge of the window.
 + The Actions button in the Ribbon is displayed aligned to the bottom.
 + The effect is even better when the "**Window frame style**" is set to "**Hidden (default)**".
 + Change the Task's Checkbox to a circular shape for a more comfortable visual experience.
-+ Compatible with both macOS and Windows.
++ Change the marker style of the unordered list. Modify the first four common levels to ⚫⚪⬛⬜.
 
 
 ## screenshots
