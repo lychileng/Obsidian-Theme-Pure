@@ -130,6 +130,7 @@
 .markdown-reading-view .task-list-item-checkbox:checked {
     background-color: var(--text-muted);
     color: var(--background-primary);
+    border: 1px solid var(--text-muted);
 }
 
 /* Add a tick mark when the checkbox is checked */
@@ -145,9 +146,22 @@
     font-size: 0.75em;
 }
 
-/* -- Change The Marker Style of The Unordered List. -------------------------- */
+/* -- Change The Marker Style of The List Bullet. -------------------------- */
 /* -- Mainly modify the first four common levels, keep the others unchanged. -- */
 /* ---------------------------------------------------------------------------- */
+
+/* Change some of the basic styles of Obsidian. */
+body {
+    /* Change collapse color */
+    --collapse-icon-color: var(--text-muted);
+    --collapse-icon-color-collapsed: var(--text-muted);
+    /* Change list marker color */
+    --list-marker-color: var(--text-muted);
+    --list-marker-color-hover: var(--text-faint);
+    --list-marker-color-collapsed: var(--text-accent);
+    /* Change bullet default size */
+    --list-bullet-size: 4px;
+}
 
 /* Change list line 1 to a solid circle. */
 .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
