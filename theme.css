@@ -101,7 +101,6 @@
     --icon-stroke: var(--icon-l-stroke-width);
 }
 
-
 /* -- Change The Style of To-do List ------------------------------------------------------------------------------ */
 /* -- Change the checkbox of the todo to a circular shape, and distinguish the colors according to the priority. -- */
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -114,7 +113,6 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-family: 'Inter';
     color: var(--text-muted);
     border: 1px solid var(--text-muted);
     border-radius: 100%;
@@ -134,16 +132,28 @@
 }
 
 /* Add a tick mark when the checkbox is checked */
-.cm-s-obsidian .task-list-item-checkbox:checked:after,
-/* .markdown-preview-view .task-list-item-checkbox, */
+/*
+.cm-s-obsidian .task-list-item-checkbox:checked:after, 
 .markdown-reading-view .task-list-item-checkbox:checked:after {
-    content: '\2713'; /* Tick mark character */
-    /* font-family: 'Inter'; */
+    content: '\2713';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+}
+*/
+
+input[type=checkbox]:checked:after {
+    content: "\2713"; /* Tick mark character */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center */
-    font-size: 0.75em;
+    width: 14px;
+    height: 14px;
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-size: 75%;
 }
 
 /* -- Change The Marker Style of The List Bullet. -------------------------- */
