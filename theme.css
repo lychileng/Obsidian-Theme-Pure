@@ -1,7 +1,7 @@
 /*
 🖌️ Pure
-📋 0.1.2
-📅 2024-01-30
+📋 0.1.3
+📅 2024-02-05
 🐦 @lychileng
 🚩 This is a minimalist-style theme. 
 */
@@ -26,7 +26,6 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-top: 0px;
-    padding-top: 48;
     width: 44px;
     height: 100%;
 }
@@ -38,7 +37,7 @@
 }
 
 /* Add a pseudo-element for drawing a border line. */
-.side-dock-actions::after {
+:not(.is-tablet) .side-dock-actions::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -48,13 +47,30 @@
     width: 100%;
 }
 
-/* Adapt to macOS system windows. */
-.mod-macos .side-dock-settings {
+/* Adjust the border line on iPad */
+.is-tablet .side-dock-actions::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 15%;
+    right: 15%;
+    border-bottom: 1px solid #64646464;
+    width: 70%;
+}
+
+/* Adapt to macOS. */
+.mod-macos:not(.is-tablet) .side-dock-settings {
     margin-top: 10px;
     padding-bottom: 40px;
 }
 
-/* Adapt to Linux/Windows system windows. */
+/* Adapt to iPad. */
+.mod-macos.is-tablet .side-dock-settings {
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+/* Adapt to Linux/Windows. */
 .mod-linux .side-dock-settings,
 .mod-windows .side-dock-settings {
     margin-top: 10px;
@@ -130,19 +146,6 @@
     color: var(--background-primary);
     border: 1px solid var(--text-muted);
 }
-
-/* Add a tick mark when the checkbox is checked */
-/*
-.cm-s-obsidian .task-list-item-checkbox:checked:after, 
-.markdown-reading-view .task-list-item-checkbox:checked:after {
-    content: '\2713';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1em;
-}
-*/
 
 /* Change OB's default values */
 input[type=checkbox]:checked:after {

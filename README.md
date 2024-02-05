@@ -1,37 +1,32 @@
-**This is a minimalist-style theme.**
+**First of all, let me say that Obsidian is fantastic.**
+
+### about
+Strictly speaking, this is not a "conventional" theme. It doesn't have visual creative optimizations, complex color designs, nor is it intended for custom plugin functions.  
+
+Choosing Obsidian as a knowledge management tool is to value the offline security of data, and the high compatibility and easy migration of Markdown text.  
+
+The main principle of this theme is still to adhere to the "original flavor" while making some minor adjustments to operations and usability. It's more for my own preference, and I share it here for everyone to use at will.
+ 
+### features
++ **Hidden Ribbon**: The Ribbon will automatically show or hide when the mouse enters or leaves the left side of the window.
++ **Round Task List**: No other reason, I just prefer round over square, and lean towards Apple's style.
++ **Tiered Bullet List**: Use solid/hollow circles and squares to mark the first four levels of bullet lists, just like Word does.
+
+### screenshots
++ macOS / Windows, everything is normal.  
+![macOS](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/mac.png?raw=true)
+![Windows](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/win.png?raw=true)  
+
++ iOS / iPadOS, except for the Ribbon, everything else runs normally.  
+![mobile](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/mobile.png?raw=true)   
+
+    > Well, I don't have any Linux or Android device, and am too lazy to build virtual machines, but theoretically, everything should be normal. 😂  
 
 
-## about
+### btw
+Currently, I am in the early stages of learning how to use Obsidian, and I am busy with game design and development, so I don't have much spare time.   
 
-Just started using Obsidian, in the process of exploring. I hope to make the window display in a minimalist and pure way such as using Notes on a Mac.
+As I continue to deepen my understanding of Obsidian, I hope to contribute more to the community.
 
-
-## features
-
-![Pure](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/Pure%20Theme.gif?raw=true)  
-
-Compatible with both macOS and Windows:
-+ The Ribbon area will automatically hide and display when the mouse moves to the left edge of the window.
-+ The Actions button in the Ribbon is displayed aligned to the bottom.
-+ The effect is even better when the "**Window frame style**" is set to "**Hidden (default)**".
-+ Change the Task's Checkbox to a circular shape for a more comfortable visual experience.
-+ Change the style of bullet list. Modify the first four levels to solid/hollow circles and squares.
-
-
-## screenshots
-
-![macOS](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/mac_512.jpg?raw=true)
-![Windows](https://github.com/lychileng/Obsidian-Theme-Pure/blob/main/screenshots/win_512.jpg?raw=true)
-
-
-## plans
-
-This is an initial version, no additional design has been applied to the font, color, icons, and other elements yet. If there's time...😊
-
-
-## btw
-
-If you don't feel like downloading this theme, you can also download the CSS snippet and apply it directly in the appearance settings.
-
-
+---
 [<img width="60" alt="bmc-icon" src="https://upload.wikimedia.org/wikipedia/zh/0/08/Buy_me_a_coffee_logo.png">](https://www.buymeacoffee.com/lychi)
