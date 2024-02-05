@@ -8,6 +8,7 @@ Choosing Obsidian as a knowledge management tool is to value the offline securit
 The main principle of this theme is still to adhere to the "original flavor" while making some minor adjustments to operations and usability. It's more for my own preference, and I share it here for everyone to use at will.
  
 ### features
+![Pure](https://github.com/lychileng/Obsidian-Theme-Pure/blob/1b9a960164b400569fb81888a34997e3f58527ef/screenshots/Pure%20Theme.gif?raw=true)  
 + **Hidden Ribbon**: The Ribbon will automatically show or hide when the mouse enters or leaves the left side of the window.
 + **Round Task List**: No other reason, I just prefer round over square, and lean towards Apple's style.
 + **Tiered Bullet List**: Use solid/hollow circles and squares to mark the first four levels of bullet lists, just like Word does.
