@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-/*   */
+/* Adjust the border line on iPad */
 .is-tablet .side-dock-actions::after {
     content: '';
     position: absolute;
@@ -58,19 +58,19 @@
     width: 70%;
 }
 
-/* Adapt to macOS system windows. */
+/* Adapt to macOS. */
 .mod-macos:not(.is-tablet) .side-dock-settings {
     margin-top: 10px;
     padding-bottom: 40px;
 }
 
-/*   */
+/* Adapt to iPad. */
 .mod-macos.is-tablet .side-dock-settings {
     margin-top: 25px;
     padding-bottom: 0px;
 }
 
-/* Adapt to Linux/Windows system windows. */
+/* Adapt to Linux/Windows. */
 .mod-linux .side-dock-settings,
 .mod-windows .side-dock-settings {
     margin-top: 10px;
@@ -127,7 +127,7 @@
     border: 1px solid var(--text-muted);
     border-radius: 50%;
     cursor: pointer;
-    transform: translateY(-5%);
+    transform: translateY(-5%); /* 😔 */
 }
 
 .markdown-reading-view .task-list-item-checkbox {
@@ -138,21 +138,18 @@
 
 .mod-windows .markdown-reading-view .task-list-item-checkbox {
     position: absolute;
-    transform: translateY(20%);
-    /* 🙄 */
+    transform: translateY(20%); /* 🙄 */
 }
 
-.mod-macos .markdown-reading-view .task-list-item-checkbox {
+.mod-macos:not(.is-tablet) .markdown-reading-view .task-list-item-checkbox {
     position: absolute;
-    transform: translateY(12.5%);
-    /* 🤮 */
+    transform: translateY(12.5%); /* 🤮 */
 }
 
 .is-tablet .markdown-reading-view .task-list-item-checkbox,
 .is-mobile .markdown-reading-view .task-list-item-checkbox {
     position: absolute;
-    transform: translateY(5%);
-    /* 🤬 */
+    transform: translateY(5%); /* 🤬 */
 }
 
 /* Style when the checkbox is checked */
@@ -163,19 +160,16 @@
 
 /* Change OB's default values */
 input[type=checkbox]:checked:after {
-    content: "\2713";
-    /* Tick mark character */
+    content: "\2713"; /* Tick mark character */
     position: absolute;
     top: 54%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /* Center */
+    transform: translate(-50%, -50%); /* Center */
     width: 100%;
     height: 100%;
     -webkit-mask-position: 50% 50%;
     -webkit-mask-size: 75%;
 }
-
 
 /* -- Change The Marker Style of The List Bullet. -------------------------- */
 /* -- Mainly modify the first four common levels, keep the others unchanged. -- */
