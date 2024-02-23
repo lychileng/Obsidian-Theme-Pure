@@ -127,14 +127,28 @@
     border: 1px solid var(--text-muted);
     border-radius: 50%;
     cursor: pointer;
+    transform: translateY(-5%); /* 😔 */
 }
 
 .markdown-reading-view .task-list-item-checkbox {
     border: 1px solid var(--text-muted);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.mod-windows .markdown-reading-view .task-list-item-checkbox {
     position: absolute;
-    transform: translateY(25%); /* 🙄 */
+    transform: translateY(20%); /* 🙄 */
+}
+
+.mod-macos:not(.is-tablet) .markdown-reading-view .task-list-item-checkbox {
+    position: absolute;
+    transform: translateY(12.5%); /* 🤮 */
+}
+
+.mod-macos.is-tablet .markdown-reading-view .task-list-item-checkbox {
+    position: absolute;
+    transform: translateY(7.5%); /* 🤬 */
 }
 
 /* Style when the checkbox is checked */
