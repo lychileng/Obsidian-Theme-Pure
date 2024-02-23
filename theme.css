@@ -146,8 +146,8 @@
     transform: translateY(12.5%); /* 🤮 */
 }
 
-.is-tablet .markdown-reading-view .task-list-item-checkbox,
-.is-mobile .markdown-reading-view .task-list-item-checkbox {
+.is-mobile .markdown-reading-view .task-list-item-checkbox,
+.is-tablet .markdown-reading-view .task-list-item-checkbox {
     position: absolute;
     transform: translateY(5%); /* 🤬 */
 }
