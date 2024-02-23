@@ -1,4 +1,3 @@
-**First of all, let me say that Obsidian is fantastic.**
 
 ### about
 Strictly speaking, this is not a "conventional" theme. It doesn't have visual creative optimizations, complex color designs, nor is it intended for custom plugin functions.  

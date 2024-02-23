@@ -1,6 +1,6 @@
 /*
 🖌️ Pure
-📋 0.1.4
+📋 0.1.5
 📅 2024-02-23
 🐦 @lychileng
 🚩 This is a minimalist-style theme. 
@@ -123,37 +123,35 @@
 
 /* Styles applicable for both editing and preview modes */
 /* Basic style, defining the appearance of the checkbox */
-.cm-s-obsidian .task-list-item-checkbox, 
-/* .markdown-preview-view .task-list-item-checkbox, */
-.markdown-reading-view .task-list-item-checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color: var(--text-muted);
+.cm-s-obsidian .task-list-item-checkbox {
     border: 1px solid var(--text-muted);
-    border-radius: 100%;
-    position: relative;
+    border-radius: 50%;
     cursor: pointer;
+}
+
+.markdown-reading-view .task-list-item-checkbox {
+    border: 1px solid var(--text-muted);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(25%); /* 🙄 */
 }
 
 /* Style when the checkbox is checked */
 .cm-s-obsidian .task-list-item-checkbox:checked,
-/* .markdown-preview-view .task-list-item-checkbox, */
 .markdown-reading-view .task-list-item-checkbox:checked {
-    background-color: var(--text-muted);
     color: var(--background-primary);
-    border: 1px solid var(--text-muted);
 }
 
 /* Change OB's default values */
 input[type=checkbox]:checked:after {
     content: "\2713"; /* Tick mark character */
     position: absolute;
-    top: 52%;
+    top: 54%;
     left: 50%;
-    transform: translate(-50%, -48%); /* Center */
-    width: 90%;
-    height: 90%;
+    transform: translate(-50%, -50%); /* Center */
+    width: 100%;
+    height: 100%;
     -webkit-mask-position: 50% 50%;
     -webkit-mask-size: 75%;
 }
