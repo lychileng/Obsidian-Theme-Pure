@@ -61,7 +61,7 @@
 }
 
 .side-dock-settings {
-    height: 0px; /* 固定高度 */
+    height: 0px;
     margin-top: 0px;
 }
 
@@ -240,9 +240,9 @@ body {
     margin-inline-start: -2.65em;
     padding-inline-end: 2em;
     position: absolute;
-    display: inline-block; /* 确保指示器显示为内联块 */
-    vertical-align: middle; /* 调整垂直对齐 */
-    transform: translateY(-8%); /* 向上偏移20%，根据需要调整 */
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-8%);
 }
 
 /* adjust the heading-collapse-indicator */
@@ -251,7 +251,7 @@ body {
 .markdown-rendered .heading-collapse-indicator {
     margin-inline-start: -1.65em;
     position: absolute;
-    display: inline-block; /* 确保指示器显示为内联块 */
-    vertical-align: middle; /* 调整垂直对齐 */
-    transform: translateY(-8%); /* 向上偏移20%，根据需要调整 */
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-8%);
 }
