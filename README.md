@@ -22,9 +22,10 @@ The main principle of this theme is still to adhere to the "original flavor" whi
     > Well, I don't have any Linux or Android device, and am too lazy to build virtual machines, but theoretically, everything should be normal. 😂  
 
 
-### Log
-+ Pleased that Obsidian has been updated to version 1.6.x, so I have to update my basic theme to adapt to it. 😂
-+ BTW, help the officials fix a bug in the collapse indicator's position. 🥱
+### log 
++ **0.1.6**
+  + Pleased that Obsidian has been updated to version 1.6.x, so I have to update my basic theme to adapt to it. 😂
+  + BTW, help the officials fix a bug in the collapse indicator's position. 🥱
 
 ---
 [<img width="60" alt="bmc-icon" src="https://upload.wikimedia.org/wikipedia/zh/0/08/Buy_me_a_coffee_logo.png">](https://www.buymeacoffee.com/lychi)
