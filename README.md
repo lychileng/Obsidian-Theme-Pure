@@ -1,4 +1,3 @@
-
 ### about
 Strictly speaking, this is not a "conventional" theme. It doesn't have visual creative optimizations, complex color designs, nor is it intended for custom plugin functions.  
 
@@ -23,10 +22,9 @@ The main principle of this theme is still to adhere to the "original flavor" whi
     > Well, I don't have any Linux or Android device, and am too lazy to build virtual machines, but theoretically, everything should be normal. 😂  
 
 
-### btw
-Currently, I am in the early stages of learning how to use Obsidian, and I am busy with game design and development, so I don't have much spare time.   
-
-As I continue to deepen my understanding of Obsidian, I hope to contribute more to the community.
+### Log
++ Pleased that Obsidian has been updated to version 1.6.x, so I have to update my basic theme to adapt to it. 😂
++ BTW, help the officials fix a bug in the collapse indicator's position. 🥱
 
 ---
 [<img width="60" alt="bmc-icon" src="https://upload.wikimedia.org/wikipedia/zh/0/08/Buy_me_a_coffee_logo.png">](https://www.buymeacoffee.com/lychi)
