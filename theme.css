@@ -10,6 +10,12 @@
 /* -- Adjust the display and alignment of the left side-dock-ribbon area. -- */
 /* ------------------------------------------------------------------------- */
 
+.sidebar-toggle-button {  
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+}
+
 /* Adapt to Windows system. */
 .mod-windows .workspace-ribbon.side-dock-ribbon.mod-left {
     display: flex;
