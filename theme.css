@@ -158,7 +158,7 @@ input[type=checkbox]:checked:after {
     -webkit-mask-size: 75%;
 }
 
-/* -- Change The Marker Style of The List Bullet. -------------------------- */
+/* -- Change The Marker Style of The List Bullet. ----------------------------- */
 /* -- Mainly modify the first four common levels, keep the others unchanged. -- */
 /* ---------------------------------------------------------------------------- */
 
@@ -233,6 +233,22 @@ body {
     border-style: solid;
     border-radius: 50%;
     border-width: 1px;
+}
+
+/* -- Modify the highlight color. -- */
+/* --------------------------------- */
+
+.cm-s-obsidian span.cm-highlight {
+    background-color: #ace8ff63;
+    color: black;
+}
+
+.cm-s-obsidian mark,
+.markdown-preview-view mark {
+    padding: 0.1em 0.2em;
+    border-radius: 0.3em;
+    background-color: #ace8ff63;
+    color: black;
 }
 
 /* -- 🤷 -- */
