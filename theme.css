@@ -245,8 +245,8 @@ body {
 
 .cm-s-obsidian mark,
 .markdown-preview-view mark {
-    padding: 0.1em 0.2em;
-    border-radius: 0.3em;
+    padding: 0.05em 0.15em;
+    border-radius: 0.2em;
     background-color: #ace8ff63;
     color: black;
 }
